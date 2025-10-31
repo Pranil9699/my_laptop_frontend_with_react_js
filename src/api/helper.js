@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // ✅ Use environment variable (fallback to localhost if missing)
-export const BASE_URL = `${process.env.REACT_APP_API_BASE_URL || "http://localhost:8080"}/api`;
+export const BASE_URL = `${import.meta.env.VITE_API_BASE_URL || "http://localhost:8080"}/api`;
+// export const BASE_URL = `http://localhost:8080/api`;
 
 // 🌐 Public APIs
 export const myAxios = axios.create({
