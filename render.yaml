@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-laptop-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        value: https://my-laptop-backend.onrender.com
