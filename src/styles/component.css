@@ -1,0 +1,73 @@
+/* 🎨 Component-Level Styling */
+
+/* Navbar */
+.navbar {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #111827;
+  color: #9ca3af;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Laptop Card */
+.laptop-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.laptop-card:hover {
+  transform: scale(1.02);
+}
+
+/* Tables (for admin) */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f3f4f6;
+}
+
+.action-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin: 0 4px;
+  font-size: 14px;
+}
+
+.action-btn:hover {
+  background-color: #1e40af;
+}

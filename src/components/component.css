@@ -1,0 +1,81 @@
+.laptop-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.laptop-card:hover {
+  transform: translateY(-3px);
+}
+
+.laptop-card.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.laptop-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.laptop-info {
+  padding: 1rem;
+}
+
+.laptop-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.laptop-info .desc {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.specs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+  font-size: 0.85rem;
+}
+
+.specs li {
+  margin-bottom: 2px;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  color: #1e88e5;
+}
+
+.rent-btn {
+  background-color: #1e88e5;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.rent-btn:hover {
+  background-color: #1565c0;
+}
+
+.rent-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
